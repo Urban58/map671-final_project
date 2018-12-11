@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=utf-8 />
+	<title>Webpage for Pacific Crest Map</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+	<style>
+		/* add attributes for two boxes adjacent to each other*/
+		* {
+
+
+		}
+		body {
+			margin: 0;
+			padding: 0;
+			background: #e2d0b9;
+			font-family: 'tahoma', sans-serif;
+			color: #3d3d3d;
+		}
+
+		section {
+
+			width: 80%;
+			margin: 10px auto;
+		}
+
+		h1 {
+			font-family: 'tahoma', sans-serif;
+			font-weight: 500;
+			font-size: 2em; /* The em unit. 2x the current size */
+			letter-spacing: .03em;
+			text-transform: uppercase;
+		}
+
+		h2 {
+			font-family: 'tahoma', sans-serif;
+			font-weight: 700;
+			color: black;
+			font-size: 1.0em;
+			letter-spacing: .03em;
+		}
+
+		p {
+			font-size: 1em;
+			line-height: 1.5em;
+		}
+
+		a {
+			color: #005daa;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		ul {
+			padding-left: 20px;
+		}
+
+		li {
+			margin: 10px 0
+		}
+
+		#map {
+			width: 100%;
+			margin: 10px auto;
+
+		}
+		/* Use float property to make two-column layout. */
+     .first-column {
+      float: left;
+      width:40%;
+      padding-right: 20px;
+    }
+     .column {
+      float: left;
+      width: 40%;
+    }
+     /* Clear floats after the columns */
+     .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+		/*Reduces size of map and other graphic elements on screen to 40% of actual width*/
+		.max-width-img {
+			width:100%;
+		}
+
+		/* When browser is 800px wide or less */
+     @media screen and (max-width: 800px) {
+      .first-column,
+      .column {
+        width: 40%;
+      }
+	    }
+	</style>
+</head>
+
+<body>
+	<section>
+
+		<!-- This is an HTML comment. Find the comments below and follow the instructions. -->
+
+		<h1 align="left">Pacific Crest Trail Overlaying Erwin Raisz's Classic U.S. Landform Map</h1>
+
+		<!--left box contents-->
+		<div class="row">
+				<div class="first-column">
+					<img src="pacific_crest2_1200px.png" alt="Map of Pacific Crest Trail" class="max-width-img">
+					<br> <!-- line break tag -->
+					<a href="pacific_crest2_8000px.png">Link to high resolution map</a>
+				</div>
+	 			<div class="column">
+					<img src="https://www.pcta.org/wp-content/uploads/2015/12/Trail_Fin_Dome-pacific-crest-trail-7323.jpg" alt="View of mountains and trail" class="max-width-img">
+					<!-- Add you information below -->
+					<h2>Authored by Tim Kohaya for University of Kentucky New Maps Plus Class 671</h2>
+					<p>This map was created in 2018 and shows the route of the Pacific Crest Trail overlaying Erwin Raisz's classic U.S. Landforms Map. The U.S. Landforms map was
+						georeferenced to a graticule shapefile through the GDAL Georeferencer Plugin in
+						QGIS.</p>
+						<p>Data Sources: <br>
+						USDA Forest Service <a href="https://www.fs.usda.gov/detail/pct/home/?cid=stelprdb5322473" target="blank">https://www.fs.usda.gov/detail/pct/home/?cid=stelprdb5322473</a><br>
+						Raisz Landform Maps <a href="http://www.raiszmaps.com/" target="blank">http://www.raiszmaps.com</a></p>
+							</p>
+								<p> Coordinate Reference System (CRS): North America Albers Equal Area Conic (EPSG: 102008).
+							</p>
+					<ul>
+						<!-- Change the following contacts to your personal brand, whatever you want it to be! -->
+						<li>See my projects on GitHub: <a href=S"https://github.com/Urban58">@Urban58</a></li>
+
+					</ul>
+				</div>
+	</section>
+
+</body>
+
+</html>
