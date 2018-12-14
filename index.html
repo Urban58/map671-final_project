@@ -129,27 +129,27 @@
   <section>
     <a href="violent_crime_8000px.png" class="linkbox">Use this link to see high resolution map</a>
 
-    <h1>Map for the “Play, Eat, Walk” Program in Davis, CA.</h1>
-    <h2>Authored by: Tim Kohaya</h2>
+    <h1>Violent Crime is Decreasing in Sacramento County</h1>
+    <h2>Authored by Tim Kohaya for University of Kentucky New Maps Plus Class 671</h2>
 
     <div class="row">
 
       <!-- First column, the left half -->
       <div class="first-column">
-        <p>The above map shows selected amenities that are within one mile of a community park (larger service area and facilities
-           than neighborhood parks).  Selected amenities are eating establishments such as cafes and restaurants, theaters, and cinemas.
-           This analysis was done for the “Play, Eat, Walk” nationwide program sponsored by the Institute of Environmental Recreation.
-           This program encourages people to use public parks more during their daily activities because of the physical and social benefits
-           that public parks provide.</p>
+        <p>Like other urban areas in the U.S., the urbanized portion of unincorporated Sacramento County (population – 500,000)
+					has its share of violent crime incidents. However, the number of violent crimes have gone down in Sacramento County
+					during the last couple of decades and these maps show that this downward trend has continued during the last
+					decade.</p>
 
-        <p>Davis’s local “Play, Eat, Walk” program will establish walking clubs that meet at Davis’s community parks.  These clubs will take
-           a walk in the park and surrounding neighborhood and end with a meal and (on weekends) a play or a movie.  The “Play, Eat, Walk”
-           program will take advantage of Davis’s extensive bike trail system.  Davis has more than 50 miles of bike trails and has more bikes
-           per capital than any other city or town in the U.S.</p>
+        <p>The top map shows the number of violent crime incidents per one-half mile hexagon during the 2008-2009 period.
+					Violent crimes include murder, rape, sexual assaults, assaults and robberies. The middle map shows the density of violent crime
+					incidents during the 2016-2017 period.  Finally, the bottom map shows the difference between the two time periods.
+					Green-tinted hexagons show areas that have a reduction in violent crimes while red-tinted hexagons shows areas that have an
+					increase.  As can be seen, most areas have a reduction of violent crimes.</p>
 
-      <h2>Map Details</h2>
-        <p>This map was developed by using QGIS's QuickOSM tool to retrieve OpenStreetMap features. Geojson files were saved from the temporary
-          QuickOSM files. The geoprocessing tool Fixed Distance Buffer was used to prepare one mile buffers from community parks.
+			<h2>Map Details</h2>
+        <p>The maps were created using QGIS.  A hexagon grid layer was created using the MMQGIS plugin and then spatially joined with a
+				  	layer that has data points (violent crime incidents).  The resulting new layer contained counts of data points for each hexagon.
 
           <p>Data Sources: <br>
           		OpenStreetMap <a href="https://www.openstreetmap.org/" target="blank">https://www.openstreetmap.org/</a><br>
